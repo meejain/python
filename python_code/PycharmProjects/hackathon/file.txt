@@ -1,0 +1,3 @@
+tju-prod1-author1useast1
+orientaltrading-prod1-author1uswest1
+kornferry-prod-publish1westus

@@ -1,0 +1,5 @@
+	/etc/httpd/conf.d/enabled_vhosts/aem_publish.vhost:	ServerAlias	${PUBLISH_DEFAULT_HOSTNAME} 
+	/etc/httpd/conf.d/enabled_vhosts/wsu_publish.vhost:	 ServerAlias     ${PUBLISH_WSU_HOSTNAME65}
+	/etc/httpd/conf.d/enabled_vhosts/wsu_publish.vhost:	 ServerAlias     ${PUBLISH_WSU_HOSTNAME}
+	/etc/httpd/conf.d/enabled_vhosts/wsu_publish.vhost:	 ServerAlias     ${PUBLISH_WWW_HOSTNAME}
+	/etc/httpd/conf.d/enabled_vhosts/wsu_publish.vhost:       ## ServerAlias     aem-65.westernsydney.edu.au

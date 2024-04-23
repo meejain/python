@@ -1,0 +1,113 @@
+{
+  "us-east-1": [
+    "pl-023eacac2e1359ade",
+    "pl-0a8d9b61fd127d368",
+    "pl-0e7073defb71a2bd7",
+    "pl-078ea245d03971b64"
+  ],
+  "us-east-2": [
+    "pl-083e99b75f269f56c",
+    "pl-091c599883b99f7ed",
+    "pl-07cb844398742a2c1",
+    "pl-09323937a105e581c"
+  ],
+  "us-west-1": [
+    "pl-0248073b67ee71186",
+    "pl-089eb054a81c358a3",
+    "pl-018f6ae5312c99ba7",
+    "pl-048586dd84858a23a"
+  ],
+  "us-west-2": [
+    "pl-0ba174f02cff1e846",
+    "pl-01518b8e4bb8c2c37",
+    "pl-0a182f5d03b61bbc7",
+    "pl-06559d4e4751b9abc"
+  ],
+  "af-south-1": [
+    "No Prefix list"
+  ],
+  "ap-east-1": [
+    "No Prefix list"
+  ],
+  "ap-south-1": [
+    "pl-08c8c328506098530",
+    "pl-0877777114cc737d0",
+    "pl-006dd356b5c4fc5eb",
+    "pl-0f75fba8a9d1f07c9"
+  ],
+  "ap-northeast-3": [
+    "No Prefix list"
+  ],
+  "ap-northeast-2": [
+    "pl-0e0ce193aaa211685",
+    "pl-023da74450a32a043",
+    "pl-0e731df7719823456",
+    "pl-0c58cfc40dbb4bf00"
+  ],
+  "ap-northeast-1": [
+    "pl-037f419d15e792038",
+    "pl-05cc4c5b84d0f0933",
+    "pl-0047718da19392976",
+    "pl-01fb8269245525cd7"
+  ],
+  "ap-southeast-2": [
+    "pl-0b2cd2ca5764c9a41",
+    "pl-0d43afbcc8711ea00",
+    "pl-0387660ab73ef6b23",
+    "pl-08c780917e0b119be"
+  ],
+  "ap-southeast-1": [
+    "pl-0e5cdefea0efd6817",
+    "pl-0bccb7df6cd0b64be",
+    "pl-0f0d82c49b6810bf5",
+    "pl-05154abc2d1077d6e"
+  ],
+  "ca-central-1": [
+    "pl-01dbef52b5af851ad",
+    "pl-0b0677075e673b407",
+    "pl-090fbe8e3d126a8f0",
+    "pl-0287485305245ca3c"
+  ],
+  "eu-central-1": [
+    "pl-0543252c8a672c057",
+    "pl-0abc5101a77df9d7e",
+    "pl-026320c4a13b201b4",
+    "pl-08c75f974f1388512"
+  ],
+  "eu-west-1": [
+    "pl-036854fa5df0919d1",
+    "pl-01d6f67c6b0c9c8d9",
+    "pl-01adbbd6fbc351a96",
+    "pl-0b852651817dbcd60"
+  ],
+  "eu-west-2": [
+    "pl-0b517fd91bb31a133",
+    "pl-0ab82509d88240af6",
+    "pl-03c6d3fe8067d904f",
+    "pl-08bbfe71262bcd604"
+  ],
+  "eu-west-3": [
+    "pl-0325dcfc9932b03ea",
+    "pl-090ba4462cbdfdcfe",
+    "pl-02b18a721c3f441c6",
+    "pl-00eea0630c59a6f46"
+  ],
+  "eu-south-1": [
+    "No Prefix list"
+  ],
+  "eu-north-1": [
+    "pl-016c213152c5befd7",
+    "pl-0fc6c7b4570c40fcd",
+    "pl-0c3a9f017bd65fb15",
+    "pl-008496910cafa3235"
+  ],
+  "me-south-1": [
+    "No Prefix list"
+  ],
+  "sa-east-1": [
+    "pl-0b1b9ec08f2669a81",
+    "pl-0f6bca280373ab663",
+    "pl-0f780babcaa0bbd6d",
+    "pl-00e9531493c3065e3"
+  ]
+}

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -x ; for a in `cat file.txt`; do value=`echo $a | grep author && { amstool cmd $a "sudo du -sh /mnt/crx/author/crx-quickstart/repository/segmentstore ; df -h /mnt" ; } || { amstool cmd $a "sudo du -sh /mnt/crx/publish/crx-quickstart/repository/segmentstore ; df -h /mnt" ; }` ; if [[ $a == *"author"* ]] ; then SS=`echo $value | head -5 | grep segmentstore | awk '{print $4}'`; else SS=`echo $value | head -5 | grep segmentstore | awk '{print $3}'`; fi ; if [[ $a == *"author"* ]] ; then diskspaceusage=`echo $value | grep "/mnt" | awk '{print $17}' | grep "%"` ; else diskspaceusage=`echo $value | grep "/mnt" | awk '{print $16}' | grep "%"`; fi ; echo "$a#$SS#$diskspaceusage" >> ~/tmp/stats.txt ; done
+
+for a in `cat ~/tmp/stats.txt`; do value=`echo $a | awk -F"#" '{print $2}'` ; if [ ! -z $value ] ; then variable=`echo $value | grep G` ; if [ ! -z $variable ] ; then Mvalue=`echo $value | sed 's/\(.*\)G/\1/' | xargs -n1 | awk '{print $1*1024}'` ; instance=`echo $a | awk -F"#" '{print $1}'` ; diskspace=`echo $a | awk -F"#" '{print $3}'` ; SS=`echo "${Mvalue}"` ; echo "${instance}#${SS}#${diskspace}" ;else Mvalue=`echo $value | sed 's/\(.*\)M/\1/' | xargs -n1 | awk '{print $1}'` ; instance=`echo $a | awk -F"#" '{print $1}'` ; diskspace=`echo $a | awk -F"#" '{print $3}'` ; SS=`echo "${Mvalue}"` ; echo "${instance}#${SS}#${diskspace}"; fi; fi  ; done > ~/tmp//stats1.txt
+
+cat ~/tmp/stats1.txt | sort --field-separator="#" -k 2 -V -r > ~/tmp/stats2.txt
+
+set -x ; default=1024; echo "Instance Name\tSegment Store\tDisk Space Utilization" > ~/tmp/finalstats.txt; for a in `cat ~/tmp/stats2.txt`; do instance=`echo $a | awk -F"#" '{print $1}'` ; diskspace=`echo $a | awk -F"#" '{print $3}'` ; Mvalue=`echo $a | awk -F"#" '{print $2}'` ; if (( $(echo "$Mvalue $default" | awk '{print ($1 > $2)}') )) ; then Mvalue=`echo $Mvalue | xargs -n1 | awk '{print $1 / 1024}'` ; SS=`echo "${Mvalue}G"` ; echo "${instance}\\t${SS}\\t${diskspace}" ; else SS=`echo "${Mvalue}M"` ; echo "${instance}\\t${SS}\\t${diskspace}" ; fi ; done >> ~/tmp/finalstats.txt
+
+cat ~/tmp/finalstats.txt | egrep -- "prod|Instance Name" > ~/tmp/AMS-Basic-PROD-Instances-SegmentStoreSize-DiskSpaceUtilization.txt

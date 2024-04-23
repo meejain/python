@@ -1,0 +1,10 @@
+3M#mmm-prod2-dispatcher1useast1
+AARP#aarp-prod-e75-dispatcher1useast1
+AARP#aarp-prod-e75-dispatcher1uswest2
+AB_Sandvik_Coromant#sandvik-prod65-dispatcher1euwest1
+AB_TETRA_PAK#tetrapak-prod65-dispatcher1westeurope
+ACCA#acca-prod-65s-dispatcher1euwest1
+ACCA_(China)#acca-cn-prod65-01-dispatcher1cnnorth1
+ACT#act-prod65-dispatcher1useast1
+ADT#adt-prod-aem65-dispatcher1useast1
+AGL_Energy_Limited#agl-prod65-02-dispatcher1australiasoutheast
